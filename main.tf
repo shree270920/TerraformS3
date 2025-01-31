@@ -69,6 +69,15 @@ resource "aws_s3_object" "profile" {
   
 }
 
+#INSERTING OBJECT IN BUCKET (FOR your-photo.png image)
+resource "aws_s3_object" "myprofile" {
+  bucket     = aws_s3_bucket.myS3Bucket.id
+  key        = "your-photo.png"
+  source     = "your-photo.png"
+  acl        = "public-read"
+  
+}
+
 #CONFIGURE WEBSITE IN OUR TERRAFORM 
 resource "aws_s3_bucket_website_configuration" "example" {
   bucket = aws_s3_bucket.myS3Bucket.id
