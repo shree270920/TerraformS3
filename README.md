@@ -120,8 +120,7 @@ terraform apply -auto-approve
 ```
 
 STEP 12: To configure the website on terraform  ```aws_s3_bucket_website_configuration```
-
-	- ```bash
+```bash
 terraform apply -auto-approve
 ```
 
@@ -131,7 +130,7 @@ terraform apply -auto-approve
 
 Step 13: Create ```outputs.tf``` to get the endpoint of the website
 
-- ```bash
+```bash
 terraform apply -auto-approve
 ```
 
