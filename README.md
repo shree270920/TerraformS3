@@ -3,7 +3,7 @@
 CREATE YOUR WEBSITE ON AWS  USING TERRAFORM  
 
 
-STEP 1: Install Terrfaorm from official documentaion
+STEP 1: Install Terraform from official documentation
 ```bash 
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 ```
@@ -45,7 +45,7 @@ terraform -v
 ```
 Step 2: Create ```provider.tf``` file in the working directory
 
-Step 3: Search for ```aws terraform provider``` in the browser (Official documentaion recommended).
+Step 3: Search for ```aws terraform provider``` in the browser (Official documentation recommended).
 
 	Copy code into the ```provider.tf```
 	
@@ -56,7 +56,7 @@ terraform init
 ```
 Step 4: Create ```main.tf``` file
 
-		```Search terraform s3 resource``` in the browser (Official documentaion recommended)
+		```Search terraform s3 resource``` in the browser (Official documentation recommended)
 		
 		Copy the code for bucket and paste in ```main.tf```
 		
@@ -85,7 +85,7 @@ Step 7: terraform apply [To apply the configuration to create the resource)
 ```bash
 terraform apply -auto-approve
 ```
-- Refresh you S3 bucket page on the AWS console . It will have the S3 bucket created through terrfaorm (IaC)
+- Refresh you S3 bucket page on the AWS console . It will have the S3 bucket created through Terraform (IaC)
 
 STEP 8: IN ```main.tf``` add the following resource
 
